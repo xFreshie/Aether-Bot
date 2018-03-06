@@ -1,15 +1,5 @@
 const Discord = require("discord.js");
-const client = new Discord.Client({
-  disableEveryone: true,
-  messageCacheMaxSize: 500,
-  messageCacheLifetime: 120,
-  messageSweepInterval: 60
-});
-const economy = require('discord-eco');
-const fs = require('fs');
-const YTDL = require('ytdl-core');
-const sql = require("sqlite");
- 
+const client = new Discord.Client);
 const PREFIX = ".";
 
 //Commands
