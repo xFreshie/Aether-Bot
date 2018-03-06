@@ -28,7 +28,5 @@ break;
 
             bot.on('guildMemberRemove', member => {
                 member.guild.channels.get('404273665925185536').send('**' + member.user.username + '**, has left the server');
-                //
-    }	
-});
+            });
 bot.login(process.env.BOT_TOKEN);
