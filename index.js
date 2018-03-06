@@ -1,17 +1,11 @@
 const Discord = require("discord.js");
-const client = new Discord.Client({
-  disableEveryone: true,
-  messageCacheMaxSize: 500,
-  messageCacheLifetime: 120,
-  messageSweepInterval: 60
-});
+const client = new Discord.Client;
 const Cleverbot = require("cleverbot-node");
 const economy = require('discord-eco');
 const fs = require('fs');
 const YTDL = require('ytdl-core');
 const sql = require("sqlite");
 const clbot = new Cleverbot;
-clbot.configure({botapi: "CC74amM7cQZbj-XPp-OAY1pesPw"});
  
 const PREFIX = "-";
 
@@ -31,7 +25,6 @@ break;
             //Welcome And GoodBye
             bot.on('guildMemberAdd', member => {
                 member.guild.channels.get('404273665925185536').send('**' + member.user.username + '**, has joined the server!'); 
-            });
 
             bot.on('guildMemberRemove', member => {
                 member.guild.channels.get('404273665925185536').send('**' + member.user.username + '**, has left the server');
