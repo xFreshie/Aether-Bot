@@ -29,7 +29,6 @@ break;
 //Welcome GoodBye
 bot.on('guildMemberAdd', member => {
     member.guild.channels.get('404273665925185536').send('**' + member.user.username + '**, has joined the server!'); 
-});
 
 bot.on('guildMemberRemove', member => {
     member.guild.channels.get('404273665925185536').send('**' + member.user.username + '**, has left the server');
