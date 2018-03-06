@@ -21,11 +21,6 @@ const PREFIX = "-";
             .addField('Pong!', 'Bot`s Latency is '+botzping+"ms." )
             .setColor(("#000000".replace(/0/g, function () { return (~~(Math.random() * 16)).toString(16); })))
             message.channel.send(embed);
-break;
-            //Welcome And GoodBye
-            bot.on('guildMemberAdd', member => {
-                member.guild.channels.get('404273665925185536').send('**' + member.user.username + '**, has joined the server!'); 
-
-            bot.on('guildMemberRemove', member => {
-                member.guild.channels.get('404273665925185536').send('**' + member.user.username + '**, has left the server');
+      break;
+    });
 bot.login(process.env.BOT_TOKEN);
