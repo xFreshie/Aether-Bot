@@ -52,21 +52,21 @@ bot.on("message", function(message) {
 		});
 		    break;
 	case "help":
-		message.channel.send("** Help Menu **\nIf you want the help of a command, type ``%commandhelp`` ``command``\n1) *say* - **Sends the message the user told the bot to send**\n2) *ping* - **Pings**\n \n3) *serverinvite* - **Server Invitation Link**\n4) *factions* - **Information about conspiracycraft faction.**\n5) *hyperlegends* - **Information about the upcoming server.**\n6) *officers* - **List of the current faction officers.**\n \n``The prefix is %``");
+		message.channel.send("** Help Menu **\nIf you want the help of a command, type ``%commandhelp````command``\n1) *say* - **Sends the message the user told the bot to send**\n2) *ping* - **Pings**\n \n3) *serverinvite* - **Server Invitation Link**\n4) *factions* - **Information about conspiracycraft faction.**\n5) *hyperlegends* - **Information about the upcoming server.**\n6) *officers* - **List of the current faction officers.**\n \n``The prefix is %``");
 		    break;
-	case "commandhelp say":
+	case "commandhelpsay":
 		    message.channel.send("``Command Help`` **%say** - Says a message using the bot.\n``For example`` **%say hi**");
 			break;
-	case "commandhelp ping":
+	case "commandhelpping":
 		    message.channel.send("``Command Help`` **%ping** - Pings...\n``For example`` **%ping**");
 		    break;
-	case "commandhelp serverinvite":
+	case "commandhelpserverinvite":
 		    message.channel.send("``Command Help`` **%serverinvite** - sends the server permenant invite link.\n``For example`` **%serverinvite**");
 		    break;
-	case "commandhelp factions":
+	case "commandhelpfactions":
 		    message.channel.send("``Command Help`` **%factions** - Information about conspiracycraft faction.\n``For example`` **%factions**");
 		    break;
-	case "commandhelp hyperlegends":
+	case "commandhelphyperlegends":
 		    message.channel.send("``Command Help`` **%hyperlegends** - Information about upcoming server.");
 		    break;
 	case "officers":
