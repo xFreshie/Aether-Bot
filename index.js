@@ -68,9 +68,9 @@ bot.on("message", function(message) {
 	case "serverinvite":
 		    message.channel.send("**Server permenant invite link**\nhttps://discord.gg/7FvGWqE");
 	case "factions":
-		    message.channel.send("**Join us at conspiracycraft factions!, ask the leader RyanePlayz or The Officers for an invite.");
+		    message.channel.send("**Join us at conspiracycraft factions!, ask the leader RyanePlayz or The Officers for an invite.**");
 	case "hyperlegends":
-		    message.channel.send("**Upcoming minecraft server/network owned by RyanePlayz and xtend123, sponsored by IntelliCraft!");
+		    message.channel.send("**Upcoming minecraft server/network owned by RyanePlayz and xtend123, sponsored by IntelliCraft!**");
 	case "officers":
 		    message.channel.send("``ConspiracyCraft Faction Officers!``\n**1**. ZaiZoe\n**2**. xtend123\n**3**. Fweshie");
     }	
