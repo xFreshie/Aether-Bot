@@ -52,7 +52,27 @@ bot.on("message", function(message) {
 		});
 		    break;
 	case "help":
-		message.channel.send("    ** Help Menu **\nIf you want the help of a command, type %help ``command``\n*say* - **Sends the message the user told the bot to send**\n*ping* - **Pings**\n \n``The prefix is %``")
+		message.channel.send("    ** Help Menu **\nIf you want the help of a command, type %help ``command``\n*say* - **Sends the message the user told the bot to send**\n*ping* - **Pings**\n \n*serverinvite* - **Server Invitation Link**\n*factions* - **Information about conspiracycraft faction.**\n *hyperlegends* - **Information about the upcoming server.**\n *officers* - **List of the current faction officers.**\n \n``The prefix is %``")
+	case "help say":
+		    message.channel.send("**%say** - Says a message using the bot.\n``For example`` **%say hi**");
+	case "help ping":
+		    message.channel.send("**%ping** - Pings...\n``For example`` **%ping**");
+	case "help serverinvite":
+		    message.channel.send("**%serverinvite** - sends the server permenant invite link.\n``For example`` **%serverinvite**");
+	case "help factions":
+		    message.channel.send("**%factions** - Information about conspiracycraft faction.\n``For example`` **%factions**");
+	case "help hyperlegends":
+		    message.channel.send("**%hyperlegends** - Information about upcoming server.");
+	case "officers":
+		    message.channel.send("**%officers** - List of the officers in the factions.");
+	case "serverinvite":
+		    message.channel.send("**Server permenant invite link**\nhttps://discord.gg/7FvGWqE");
+	case "factions":
+		    message.channel.send("**Join us at conspiracycraft factions!, ask the leader RyanePlayz or The Officers for an invite.");
+	case "hyperlegends":
+		    message.channel.send("**Upcoming minecraft server/network owned by RyanePlayz and xtend123, sponsored by IntelliCraft!");
+	case "officers":
+		    message.channel.send("``ConspiracyCraft Faction Officers!``\n**1**. ZaiZoe\n**2**. xtend123\n**3**. Fweshie");
     }	
 });
 bot.login(process.env.BOT_TOKEN);
