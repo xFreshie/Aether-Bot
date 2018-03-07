@@ -55,4 +55,4 @@ bot.on("message", function(message) {
 		message.channel.send("    ** Help Menu **\nIf you want the help of a command, type %help ``command``\n*say* - **Sends the message the user told the bot to send**\n*ping* - **Pings**\n \n``The prefix is %``")
     }	
 });
-bot.login(BOT_TOKEN);
+bot.login(process.env.BOT_TOKEN);
