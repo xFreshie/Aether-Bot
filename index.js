@@ -52,27 +52,38 @@ bot.on("message", function(message) {
 		});
 		    break;
 	case "help":
-		message.channel.send("** Help Menu **\nIf you want the help of a command, type ``%commandhelp`` ``command``\n1) *say* - **Sends the message the user told the bot to send**\n2) *ping* - **Pings**\n \n3) *serverinvite* - **Server Invitation Link**\n4) *factions* - **Information about conspiracycraft faction.**\n5) *hyperlegends* - **Information about the upcoming server.**\n6) *officers* - **List of the current faction officers.**\n \n``The prefix is %``")
+		message.channel.send("** Help Menu **\nIf you want the help of a command, type ``%commandhelp`` ``command``\n1) *say* - **Sends the message the user told the bot to send**\n2) *ping* - **Pings**\n \n3) *serverinvite* - **Server Invitation Link**\n4) *factions* - **Information about conspiracycraft faction.**\n5) *hyperlegends* - **Information about the upcoming server.**\n6) *officers* - **List of the current faction officers.**\n \n``The prefix is %``");
+		    break;
 	case "commandhelp say":
 		    message.channel.send("``Command Help`` **%say** - Says a message using the bot.\n``For example`` **%say hi**");
+			break;
 	case "commandhelp ping":
 		    message.channel.send("``Command Help`` **%ping** - Pings...\n``For example`` **%ping**");
+		    break;
 	case "commandhelp serverinvite":
 		    message.channel.send("``Command Help`` **%serverinvite** - sends the server permenant invite link.\n``For example`` **%serverinvite**");
+		    break;
 	case "commandhelp factions":
 		    message.channel.send("``Command Help`` **%factions** - Information about conspiracycraft faction.\n``For example`` **%factions**");
+		    break;
 	case "commandhelp hyperlegends":
 		    message.channel.send("``Command Help`` **%hyperlegends** - Information about upcoming server.");
+		    break;
 	case "officers":
 		    message.channel.send("``Command Help`` **%officers** - List of the officers in the factions.");
+		    break;
 	case "serverinvite":
 		    message.channel.send("**Server permenant invite link**\nhttps://discord.gg/7FvGWqE");
+		    break;
 	case "factions":
 		    message.channel.send("**Join us at conspiracycraft factions!, ask the leader RyanePlayz or The Officers for an invite.**");
+		    break;
 	case "hyperlegends":
 		    message.channel.send("**Upcoming minecraft server/network owned by RyanePlayz and xtend123, sponsored by IntelliCraft!**");
+		    break;
 	case "officers":
 		    message.channel.send("``ConspiracyCraft Faction Officers!``\n**1**. ZaiZoe\n**2**. xtend123\n**3**. Fweshie");
+		    break;
     }	
 });
 bot.login(process.env.BOT_TOKEN);
