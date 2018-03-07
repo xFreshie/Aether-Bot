@@ -52,7 +52,7 @@ bot.on("message", function(message) {
 		});
 		    break;
 	case "help":
-		message.channel.send("    ** Help Menu **\nIf you want the help of a command, type %help ``command``\n*say* - **Sends the message the user told the bot to send**\n*ping* - **Pings**\n \n*serverinvite* - **Server Invitation Link**\n*factions* - **Information about conspiracycraft faction.**\n*hyperlegends* - **Information about the upcoming server.**\n *officers* - **List of the current faction officers.**\n \n``The prefix is %``")
+		message.channel.send("** Help Menu **\nIf you want the help of a command, type %help ``command``\n1) *say* - **Sends the message the user told the bot to send**\n2) *ping* - **Pings**\n \n3) *serverinvite* - **Server Invitation Link**\n4) *factions* - **Information about conspiracycraft faction.**\n5) *hyperlegends* - **Information about the upcoming server.**\n6) *officers* - **List of the current faction officers.**\n \n``The prefix is %``")
 	case "help say":
 		    message.channel.send("``Command Help`` **%say** - Says a message using the bot.\n``For example`` **%say hi**");
 	case "help ping":
