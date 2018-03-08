@@ -84,5 +84,6 @@ bot.on("message", function(message) {
 	case "officers":
 		    message.channel.send("``ConspiracyCraft Faction Officers!``\n**1**. ZaiZoe\n**2**. xtend123\n**3**. Fweshie");
 		    break;
+    }
 });
 bot.login(process.env.BOT_TOKEN);
