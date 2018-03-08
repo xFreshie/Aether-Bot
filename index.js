@@ -85,11 +85,8 @@ bot.on("message", function(message) {
 		    message.channel.send("``ConspiracyCraft Faction Officers!``\n**1**. ZaiZoe\n**2**. xtend123\n**3**. Fweshie");
 		    break;
 	//lol
-		    client.on('guildMemberRemove', (member) => {
-			    client.channels.find('welcome-and-goodbye').send(`**${member_username}** has left the server, Bye bye!` :sob:);
-		    }
-			      client.on('guildMemberAdd', (member) => {
-			    		client.channels.find('welcome-and-goodbye').send(`**${member_username}** has joined the server, welcome!` :smile:);
+		    client.on('guildMemberAdd', (member) => {
+			    client.channels.find('welcome-and-goodbye').send(`**${member_username}** has joined the server, Welcome!` :smile:);
 		    }
 
 });
