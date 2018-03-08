@@ -84,6 +84,14 @@ bot.on("message", function(message) {
 	case "officers":
 		    message.channel.send("``ConspiracyCraft Faction Officers!``\n**1**. ZaiZoe\n**2**. xtend123\n**3**. Fweshie");
 		    break;
+	//Welcome&GoodBye
+		bot.on('guildMemberAdd', member => {
+   		 member.guild.channels.get('404273665925185536').send('**' + member.user.username + '**, has joined the server!'); 
+		});
+
+		bot.on('guildMemberRemove', member => {
+   		 member.guild.channels.get('404273665925185536').send('**' + member.user.username + '**, has left the server');
+    		//
     }	
 });
 bot.login(process.env.BOT_TOKEN);
