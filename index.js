@@ -87,7 +87,7 @@ bot.on("message", function(message) {
 	//lol
 		    client.on('guildMemberAdd', (member) => {
 			    client.channels.find('welcome-and-goodbye').send(`**${member_username}** has joined the server, Welcome!` :smile:);
-		    }
+		    })
 
 });
 bot.login(process.env.BOT_TOKEN);
